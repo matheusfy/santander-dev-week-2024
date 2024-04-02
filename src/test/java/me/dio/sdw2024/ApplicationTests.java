@@ -1,4 +1,4 @@
-package me.dio.sdw24;
+package me.dio.sdw2024;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
