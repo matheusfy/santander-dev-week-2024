@@ -10,6 +10,9 @@ spring:
     console:
       enabled: true
 
+generative-ai:
+  provider: "GEMINI"
+
 openapi:
   base-url: https://api.openai.com
   apiKey: ${OPENAI_API_KEY}
