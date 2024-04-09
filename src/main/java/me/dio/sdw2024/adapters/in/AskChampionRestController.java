@@ -7,10 +7,9 @@ import org.springframework.web.bind.annotation.*;
 
 @Tag(name="Pergunta", description = "Faz uma pergunta ao campeão")
 @RestController
-@RequestMapping("/champions")
 public record AskChampionRestController(AskChampionUseCase useCase) {
 
-    @PostMapping("/{championId}/{question}")
+    @PostMapping("/champions/{championId}/{question}")
     public askChampionResponse askChampion(
             @PathVariable Long championId,
             @RequestBody askChampionRequest request){
