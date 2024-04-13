@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public record AskChampionRestController(AskChampionUseCase useCase) {
 
-    @CrossOrigin(origins = "http://127.0.0.1:5500/")
+//    @CrossOrigin(origins = "http://127.0.0.1:5500/")
     @PostMapping("/champions/{championId}/ask")
     public askChampionResponse askChampion(
             @PathVariable Long championId,
