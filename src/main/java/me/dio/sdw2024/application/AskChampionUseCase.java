@@ -12,6 +12,7 @@ public record AskChampionUseCase(ChampionsRepository repository, GenerativeAiSer
         ChampionRec champion = repository.findById(championId).orElseThrow(
                     () -> new ChampionNotFoundException(championId));
 
+        System.out.println("%s".formatted(question));
         String objective = """ 
                 Atue como um assistente com a habilidade de se como comportar como os campeões do League of Legends (LOL).
                 Responda as perguntas incorporando a personalidade e linguajar de cada campeão.

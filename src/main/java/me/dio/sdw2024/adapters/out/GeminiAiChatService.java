@@ -32,8 +32,10 @@ public interface GeminiAiChatService extends GenerativeAiService {
         );
 
         try {
+
             GeminiApiCompletionResponse response = chatCompletion(request);
             return response.candidates().getFirst().content().parts().getFirst().text();
+
         } catch (FeignException httpErrors){
             return "httpErrors";
         } catch (Exception unexpectedError){

@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/champions")
 public record ListChampionsRestController(ListChampionsUseCase useCase) {
 
-    @CrossOrigin(origins = "http://127.0.0.1:5500/")
+    @CrossOrigin(origins = "https://127.0.0.1:5500/")
     @GetMapping
     public List<ChampionRec> findAll(){
         return useCase.findAll();
