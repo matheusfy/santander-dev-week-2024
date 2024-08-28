@@ -12,10 +12,9 @@ import java.util.List;
 
 @Tag(name = "Campeões", description = "Endpoints para acessar o domínio de campeões do lol")
 @RestController
-@RequestMapping("/champions")
+@RequestMapping("/api/champions")
 public record ListChampionsRestController(ListChampionsUseCase useCase) {
 
-    @CrossOrigin(origins = "https://127.0.0.1:5500/")
     @GetMapping
     public List<ChampionRec> findAll(){
         return useCase.findAll();

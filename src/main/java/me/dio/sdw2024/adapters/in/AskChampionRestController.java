@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public record AskChampionRestController(AskChampionUseCase useCase) {
 
-    @CrossOrigin(origins = "https://127.0.0.1:5500/")
-    @PostMapping("/champions/{championId}/ask")
+    @PostMapping("/api/champions/{championId}/ask")
     public askChampionResponse askChampion(
             @PathVariable Long championId,
             @RequestBody askChampionRequest request){

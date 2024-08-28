@@ -22,8 +22,9 @@ Neste repositório, você encontrará o código-fonte de uma REST API e seu resp
 > - Vontade de Aprender 😉
 > - Instalação da **[JDK 21](https://www.oracle.com/br/java/technologies/downloads/#java21)** (versão LTS do Java na data das lives);
 > - Instalação do **[IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download)** ou a IDE de sua preferência (Eclipse, VSCode etc);
-> - [Opcional] Conta na AWS (caso queira publicar a sua API REST na Nuvem usando o [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk);
+> - [Opcional] Conta na AWS (caso queira publicar a sua API REST na Nuvem usando o [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk));
 > - [Opcional] Conta na OpenAI e/ou Google para integração com os modelos [GPT](https://platform.openai.com/docs/api-reference/chat/create) e/ou [Gemini](https://ai.google.dev/tutorials/rest_quickstart#text-only_input) respectivamente.
+> - [Opcional Extra] Realizar subida de recursos da aws utilizando o [Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs). Você pode encontrar o passo a passo aqui [TFReadme](infra/README.md)
 
 ## 🏛️ Arquitetura do Projeto
 
@@ -102,6 +103,10 @@ INSERT INTO champions (name, role, lore, image_url) VALUES
     ('Garen', 'Lutador', 'Um guerreiro nobre e orgulhoso, Garen faz parte da Vanguarda Destemida. Popular entre seus companheiros e respeitado o suficiente por seus inimigos, sua reputação é nada mais do que o esperado de um herdeiro da prestigiosa família Stemmaguarda, encarregada de defender Demacia e seus ideais. Vestido com uma armadura resistente à magia e empunhando uma poderosa espada, Garen está sempre pronto para confrontar magos e feiticeiros no campo de batalha, em um verdadeiro furacão de aço virtuoso.', 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg'),
     ('Teemo', 'Atirador', 'Indiferente até aos obstáculos mais perigosos e ameaçadores, Teemo vasculha o mundo com infinito entusiasmo e animação. Um yordle com uma inabalável moral que se orgulha de seguir o Código dos Escoteiros de Bandópolis, às vezes com tanta dedicação que não se toca das possíveis consequências de suas ações. Embora alguns duvidem da existência dos escoteiros, uma coisa é certa: nunca se deve duvidar das convicções de Teemo.', 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg');
 ```
+
+## Extra:
+
+Foi disponibilizado na AWS utilizando Terraform para provisionar toda a infraestrutura da aplicação para que as pessoas possam ver o projeto. Você pode acessar o projeto acessando este [link](http://ec2-54-87-161-229.compute-1.amazonaws.com/). Como não foi adicionado a questão de segurança neste projeto, o site ficara indisponível para que não tenha acessos indevidos. Caso queira ver o projeto disponibilizado no site favor entrar em contato. 
 
 ## 👩‍💻 Contribuições
 
